@@ -1,3 +1,7 @@
 Planung - Struktur
 
-ölaksdjfölkasdjf
+1. Python:: Scraper/Crawler für X (Twitter) Seiten von Usern als Ausgangspunkt
+2. Python Script über Conjob auf Linux-Server Rohdaten in Intervallen schreiben lassen
+    - Daten in Ordner und Dateien mit e.g. username, topi, date and time
+3. Python:: Data-Parser für Datenbank-Datei (x.sqlite)
+
