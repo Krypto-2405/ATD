@@ -1,0 +1,7 @@
+0 */2 * * * /usr/bin/python3 /pfad/zu/deinem/script/spiegel_crawler.py
+
+0 */2 * * * /usr/bin/python3 /home/Documents/Python-Datamining-My-01/pygethtml-05.py
+
+
+
+
