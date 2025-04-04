@@ -26,5 +26,5 @@ def scrape_and_save(url, filename):
 
 # Beispielaufruf
 url = "https://www.spiegel.de/politik/deutschland/"
-filename = "webseiten_inhalt.txt"
+filename = "F:\Prog\ATD\Projekte\Kris\Output\webseiten_inhalt.txt"
 scrape_and_save(url, filename)
