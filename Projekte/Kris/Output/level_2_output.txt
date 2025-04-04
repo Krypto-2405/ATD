@@ -1,0 +1,28 @@
+Text: Schlagzeilen, URL: https://www.spiegel.de/schlagzeilen/
+Text: SPIEGEL+, URL: https://www.spiegel.de/plus/
+Text: Magazine, URL: https://www.spiegel.de/magazine
+Text: SPIEGEL Extra, URL: https://www.spiegel.de/extra
+Text: Nahostkonflikt, URL: https://www.spiegel.de/thema/nahostkonflikt/
+Text: Ukrainekrieg, URL: https://www.spiegel.de/thema/ukraine_konflikt/
+Text: Klimakrise, URL: https://www.spiegel.de/thema/klimawandel/
+Text: Politik, URL: https://www.spiegel.de/politik/deutschland/
+Text: Ausland, URL: https://www.spiegel.de/ausland/
+Text: Panorama, URL: https://www.spiegel.de/panorama/
+Text: Sport, URL: https://www.spiegel.de/sport/
+Text: Wirtschaft, URL: https://www.spiegel.de/wirtschaft/
+Text: Wissenschaft, URL: https://www.spiegel.de/wissenschaft/
+Text: Netzwelt, URL: https://www.spiegel.de/netzwelt/
+Text: Kultur, URL: https://www.spiegel.de/kultur/
+Text: Leben, URL: https://www.spiegel.de/thema/leben/
+Text: Daten & Visualisierungen, URL: https://www.spiegel.de/thema/daten-und-visualisierungen/
+Text: Reporter, URL: https://www.spiegel.de/thema/reporter/
+Text: Job & Karriere, URL: https://www.spiegel.de/karriere/
+Text: Start, URL: https://www.spiegel.de/start/
+Text: Tests, URL: https://www.spiegel.de/tests/
+Text: Geschichte, URL: https://www.spiegel.de/geschichte/
+Text: Mobilität, URL: https://www.spiegel.de/auto/
+Text: Audio, URL: https://www.spiegel.de/audio/
+Text: Video, URL: https://www.spiegel.de/video/
+Text: Debatte, URL: https://www.spiegel.de/debatten/
+Text: Dein SPIEGEL, URL: https://www.spiegel.de/deinspiegel/
+Text: SPIEGEL in English, URL: https://www.spiegel.de/international/
