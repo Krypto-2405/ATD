@@ -1,11 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+
+# Zielverzeichnis definieren
 directory = "F:/Prog/ATD/Projekte/Kris/Output"
-filename = os.path.join(directory, "crawler_meta_output.txt")
 
+# Falls das Verzeichnis nicht existiert, erstellen
+os.makedirs(directory, exist_ok=True)
 
-
+# Dateiname mit vollständigem Pfad setzen
+filename = os.path.join(directory, "meta_output.html")
 
 def scrape_and_save(url, filename):
     try:
@@ -16,15 +20,12 @@ def scrape_and_save(url, filename):
         # HTML mit BeautifulSoup parsen
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Nur den sichtbaren Text extrahieren
-        text_lines = soup.get_text(separator='\n', strip=True).split('\n')
-        
-        # Zeilen 48 bis 53 extrahieren
-        selected_lines = '\n'.join(text_lines[47:53])
+        # Kompletter HTML-Quelltext
+        html_text = soup.prettify()
         
         # In Datei speichern
         with open(filename, 'w', encoding='utf-8') as file:
-            file.write(selected_lines)
+            file.write(html_text)
         
         print(f"Inhalt erfolgreich in {filename} gespeichert.")
     except requests.exceptions.RequestException as e:
@@ -32,5 +33,4 @@ def scrape_and_save(url, filename):
 
 # Beispielaufruf
 url = "https://www.spiegel.de/politik/deutschland/"
-filename = "meta_output.txt"
 scrape_and_save(url, filename)
