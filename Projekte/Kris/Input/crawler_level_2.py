@@ -34,8 +34,6 @@ print(variable)  # Gibt Zeile x aus
 
 
 
-
-
 url = "https://www.spiegel.de/politik/deutschland/"
 filename = "F:\Prog\ATD\Projekte\Kris\Output\l2_output.txt"
 scrape_and_save(url, filename)

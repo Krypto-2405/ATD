@@ -1,11 +1,15 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+
+# Zielverzeichnis definieren
 directory = "F:/Prog/ATD/Projekte/Kris/Output"
-filename = os.path.join(directory, "crawler_meta_output.txt")
 
+# Falls das Verzeichnis nicht existiert, erstellen
+os.makedirs(directory, exist_ok=True)
 
-
+# Dateiname mit vollständigem Pfad setzen
+filename = os.path.join(directory, "meta_output.html")
 
 def scrape_and_save(url, filename):
     try:
@@ -29,5 +33,4 @@ def scrape_and_save(url, filename):
 
 # Beispielaufruf
 url = "https://www.spiegel.de/politik/deutschland/"
-filename = "meta_output.html"
 scrape_and_save(url, filename)
