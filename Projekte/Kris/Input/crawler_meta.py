@@ -16,15 +16,12 @@ def scrape_and_save(url, filename):
         # HTML mit BeautifulSoup parsen
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Nur den sichtbaren Text extrahieren
-        text_lines = soup.get_text(separator='\n', strip=True).split('\n')
-        
-        # Zeilen 48 bis 53 extrahieren
-        selected_lines = '\n'.join(text_lines[47:53])
+        # Kompletter HTML-Quelltext
+        html_text = soup.prettify()
         
         # In Datei speichern
         with open(filename, 'w', encoding='utf-8') as file:
-            file.write(selected_lines)
+            file.write(html_text)
         
         print(f"Inhalt erfolgreich in {filename} gespeichert.")
     except requests.exceptions.RequestException as e:
@@ -32,5 +29,5 @@ def scrape_and_save(url, filename):
 
 # Beispielaufruf
 url = "https://www.spiegel.de/politik/deutschland/"
-filename = "meta_output.txt"
+filename = "meta_output.html"
 scrape_and_save(url, filename)
