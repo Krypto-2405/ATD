@@ -1,27 +1,21 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+import re
 
 # Zielverzeichnis definieren
 directory = "F:/Prog/ATD/Projekte/Kris/Output"
 os.makedirs(directory, exist_ok=True)
 
 # Datei mit den Links
-file_path = r"F:/Prog/ATD/Projekte/Kris/Output/level_2_output.txt"
+file_path = os.path.join(directory, "level_2_output.txt")
 
-# Zeile 3 (Index 2) lesen
-with open(file_path, 'r', encoding='utf-8') as file:
-    lines = file.readlines()
+# URL aus beliebigem Text extrahieren (Regex)
+def extract_url(text):
+    match = re.search(r'https?://[^\s,]+', text)
+    return match.group(0) if match else None
 
-selected_line = lines[2].strip()  # Zeile bereinigen (entfernt \n, Leerzeichen)
-
-# Link extrahieren (nach dem "URL: ")
-url_part = selected_line.split("URL: ")[-1].strip()
-
-# Letzter Teil des Links als Dateiname
-url_end = url_part.rstrip('/').split('/')[-1]  # z. B. 'magazine'
-filename = os.path.join(directory, f"{url_end}.html")
-
+# HTML jeder URL speichern
 def scrape_and_save(url, filename):
     try:
         response = requests.get(url)
@@ -33,9 +27,22 @@ def scrape_and_save(url, filename):
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(html_text)
 
-        print(f"Inhalt erfolgreich in {filename} gespeichert.")
+        print(f"[✓] Gespeichert: {filename}")
     except requests.exceptions.RequestException as e:
-        print(f"Fehler beim Abrufen der Webseite: {e}")
+        print(f"[!] Fehler bei {url}: {e}")
 
-# URL ohne Zeilenumbruch
-scrape_and_save(url_part, filename)
+# Alle Zeilen durchgehen
+with open(file_path, 'r', encoding='utf-8') as file:
+    lines = file.readlines()
+
+for i, line in enumerate(lines):
+    url = extract_url(line)
+    
+    if not url:
+        print(f"[!] Zeile {i+1} übersprungen – keine URL erkannt.")
+        continue
+
+    url_part = url.rstrip('/').split('/')[-1] or f"seite_{i+1}"
+    filename = os.path.join(directory, f"{url_part}.html")
+
+    scrape_and_save(url, filename)
