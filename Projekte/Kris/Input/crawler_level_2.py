@@ -35,6 +35,6 @@ else:
         for link in links:
             print(f"Text: {link.text.strip()}, URL: {link['href']}")
             with open(filename, 'a', encoding='utf-8') as file:
-                file.write(f"Text: {link.text.strip()}, URL: {link['href']}\n")
+                file.write(f"{link['href']}\n")
     else:
-        print("Kein <ul>-Element mit der Klasse 'polygon-swiper-wrapper' gefunden.")
+            print("Kein <ul>-Element mit der Klasse 'polygon-swiper-wrapper' gefunden.")
