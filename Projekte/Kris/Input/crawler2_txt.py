@@ -12,10 +12,10 @@ os.makedirs(directory, exist_ok=True)
 
 # Dateipfad zur HTML-Datei
 file_path = r"F:/Prog/ATD/Projekte/Kris/Output/meta_output.html"
-file_path2 = r"F:/Prog/ATD/Projekte/Kris/Output/level_2_output.txt"
+file_path2 = r"F:/Prog/ATD/Projekte/Kris/Output/crawler2.txt"
 
 # Dateiname mit vollständigem Pfad setzen
-filename = os.path.join(directory, "level_2_output.txt")
+filename = os.path.join(directory, "crawler2.txt")
 
 open(file_path2, 'w').close()
 

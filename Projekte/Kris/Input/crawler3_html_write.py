@@ -11,7 +11,7 @@ directory = "F:/Prog/ATD/Projekte/Kris/Output"
 os.makedirs(directory, exist_ok=True)
 
 # Datei mit den Links
-file_path = os.path.join(directory, "level_2_output.txt")
+file_path = os.path.join(directory, "crawler2.txt")
 
 # URL aus beliebigem Text extrahieren (Regex)
 def extract_url(text):
