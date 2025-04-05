@@ -1,3 +1,6 @@
+# Ruft die Startseite auf und speichert sie als html Datei
+
+
 import requests
 from bs4 import BeautifulSoup
 import os

@@ -1,3 +1,6 @@
+# Durchsucht die html datei nach den Hauptkategorien und speichert diese mit ihren Links in einer txt Datei
+
+
 from bs4 import BeautifulSoup
 import os
 

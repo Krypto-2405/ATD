@@ -1,3 +1,6 @@
+# Fügt die Inhalte der der txt Datei als variablen ein und ruft diese Links auf und speichert sie als html dateien 
+
+
 import requests
 from bs4 import BeautifulSoup
 import os
