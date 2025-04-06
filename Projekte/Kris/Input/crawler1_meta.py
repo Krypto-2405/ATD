@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 import os
 
 # Zielverzeichnis definieren
-directory = "F:/Prog/ATD/Projekte/Kris/Output"
+directory = "F:/Prog/ATD/Projekte/Kris/Output/html"
 
 # Falls das Verzeichnis nicht existiert, erstellen
 os.makedirs(directory, exist_ok=True)

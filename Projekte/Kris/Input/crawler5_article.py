@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import os
+from datetime import datetime
 
 # Funktion zum Abrufen und Speichern des Artikels
 def scrape_article(url, save_directory):
@@ -9,24 +10,26 @@ def scrape_article(url, save_directory):
         response.raise_for_status()  # Sicherstellen, dass die Anfrage erfolgreich war
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Den Artikeltext extrahieren (wir nehmen an, dass der Text in einem <div> mit dem Attribut 'data-area="body"' liegt)
+        # Den Artikeltext extrahieren
         article_body = soup.find('div', {'data-area': 'body'})
         
-        # Falls der Artikeltext gefunden wurde
         if article_body:
             article_text = article_body.get_text(separator='\n', strip=True)
-            
-            # Den Titel des Artikels als Dateinamen verwenden
+
+            # Aktuelle Zeit einfügen
+            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            article_text = f"[Erstellt am: {timestamp}]\n\n{article_text}"
+
+            # Titel als Dateiname
             article_title = soup.find('h1').get_text(strip=True)
-            article_title = article_title.replace(' ', '_').replace('/', '_').replace('?', '').replace(':', '')  # Ersetze ungültige Zeichen
+            article_title = article_title.replace(' ', '_').replace('/', '_').replace('?', '').replace(':', '')
             
-            # Erstelle den Dateipfad
             filename = os.path.join(save_directory, f"{article_title}.txt")
             
-            # Speichern des Artikels als Textdatei
+            # Datei speichern
             with open(filename, 'w', encoding='utf-8') as file:
                 file.write(article_text)
-            
+
             print(f"Artikel gespeichert: {filename}")
         else:
             print(f"Artikeltext nicht gefunden: {url}")
@@ -34,12 +37,18 @@ def scrape_article(url, save_directory):
     except requests.exceptions.RequestException as e:
         print(f"Fehler beim Abrufen des Artikels {url}: {e}")
 
-# Beispielaufruf
-url = "https://www.spiegel.de/wissenschaft/mensch/donald-trump-helfen-die-zoelle-am-ende-dem-klima-a-d16955a4-1a9c-4745-8c34-e478c6b54656"
-save_directory = "F:/Prog/ATD/Projekte/Kris/Output"  # Verzeichnis zum Speichern der Textdateien
+# Funktion zum Abrufen der URLs aus einer Datei
+def read_article_links(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return [line.strip() for line in file if line.strip()]
 
-# Sicherstellen, dass das Verzeichnis existiert
+# Hauptcode
+article_links_file = "F:/Prog/ATD/Projekte/Kris/Output/txt_links/article_links.txt"
+save_directory = "F:/Prog/ATD/Projekte/Kris/Output/article"
 os.makedirs(save_directory, exist_ok=True)
 
-# Speichern des Artikels
-scrape_article(url, save_directory)
+article_links = read_article_links(article_links_file)
+
+for idx, url in enumerate(article_links):
+    print(f"Verarbeite Artikel {idx + 1}/{len(article_links)}: {url}")
+    scrape_article(url, save_directory)

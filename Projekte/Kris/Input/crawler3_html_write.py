@@ -1,17 +1,16 @@
-# Fügt die Inhalte der der txt Datei als variablen ein und ruft diese Links auf und speichert sie als html dateien 
-
-
 import requests
 from bs4 import BeautifulSoup
 import os
 import re
 
-# Zielverzeichnis definieren
-directory = "F:/Prog/ATD/Projekte/Kris/Output"
-os.makedirs(directory, exist_ok=True)
+# Verzeichnis-Struktur
+base_directory = "F:/Prog/ATD/Projekte/Kris/Output"
+txt_links_directory = os.path.join(base_directory, "txt_links")
+html_directory = os.path.join(base_directory, "html")
+os.makedirs(html_directory, exist_ok=True)
 
-# Datei mit den Links
-file_path = os.path.join(directory, "crawler2.txt")
+# Pfad zur Datei mit den Links
+file_path = os.path.join(txt_links_directory, "crawler2.txt")
 
 # URL aus beliebigem Text extrahieren (Regex)
 def extract_url(text):
@@ -45,7 +44,8 @@ for i, line in enumerate(lines):
         print(f"[!] Zeile {i+1} übersprungen – keine URL erkannt.")
         continue
 
+    # Dateiname aus URL oder Fallback
     url_part = url.rstrip('/').split('/')[-1] or f"seite_{i+1}"
-    filename = os.path.join(directory, f"{url_part}.html")
+    filename = os.path.join(html_directory, f"{url_part}.html")
 
     scrape_and_save(url, filename)
