@@ -1,0 +1,33 @@
+[Erstellt am: 2025-04-07 21:31:42]
+
+Deutsche Forscher haben eine
+Solarzelle
+entwickelt, die zu 99 Prozent ihres Gewichts aus Mondstaub besteht. Sie könnte auf dem
+Mond
+hergestellt werden, ohne dass dafür Bergbau betrieben werden müsste, schreiben sie im Journal
+»Device«
+. So könnten die Solarzellen eine Basis auf dem Mond mit Energie versorgen.
+Der Wirkungsgrad der Photovoltaikeinheit erreicht den Forschern zufolge zwar nur etwa zehn Prozent, dafür könnten aber Transportkosten eingespart werden, weil weniger Solarzellen von der
+Erde
+zum Mond transportiert werden müssten. Damit komme die Solarzelle auf eine Leistung von mehr als 22 Watt pro Gramm ins All befördertes Material. Der Wert liegt mindestens 20-mal höher als bei anderen Solarzellenlösungen, berichtet die Gruppe um Felix Lang von der Universität Potsdam.
+Die US-Weltraumbehörde
+Nasa
+wollte mit der »Artemis«-Mission ursprünglich bis 2024 wieder Menschen auf den Mond bringen. Nach derzeitigem Stand soll das Mitte 2027 geschehen. Als langfristiges Ziel hat die Nasa ausgegeben, eine permanente Mondbasis als Grundlage für Missionen zum Mars zu errichten.
+DER SPIEGEL
+11.03.2025
+Solarzelle zu 99 Prozent aus Mondstaub
+Für die Mondbasis werde eine zuverlässige und günstige Energieerzeugung benötigt, schreibt das Team um Forscher Lang. Heute in der Raumfahrt verwendete Solarzellen kommen auf einen Wirkungsgrad zwischen 30 und 40 Prozent. »Sie sind sehr teuer und relativ schwer, da sie Glas oder eine dicke Folie als Abdeckung verwenden«, wird Lang in einer Mitteilung zitiert. Große Mengen dieser Photovoltaikmodule in den Weltraum zu bringen, würde kostspielig werden. Lang und Kollegen gehen von Transportkosten von einer Million Euro pro Kilogramm für einen Flug zum Mond aus.
+Bild vergrößern
+Forscherteam aus Potsdam: Juan Carlos Ginés Palomares , Felix Lang, Julian Mauricio Cuervo Ortiz
+Foto: Thee Vanichangkul
+Die Idee der Forscher ist, den Mondstaub – als Mineral Regolith genannt – als Basis für die Grundschicht und die abdeckende Schicht zu verwenden. Beide Schichten machen mehr als 99 Prozent des Gewichts der Solarzelle aus.
+Die Forscher schreiben, dass Regolith in einem Ofen aufgeschmolzen werden könnte. Der Ofen könne über spezielle Linsen durch Sonnenlicht erhitzt werden. Anschließend würde das Material so abgekühlt, dass sich Glas bildet. Das Team um Lang testete die Idee mit künstlichem Mondstaub in einem Vakuum, wie es ähnlich auf dem Mond herrscht. Allerdings spielt bei der Glasbildung auch die Schwerkraft eine Rolle. Diese ist auf dem Mond nur etwa ein Sechstel so groß wie auf der Erde, sodass Unsicherheiten bleiben.
+Mondstaubsolarzellen haben noch mehr Potenzial
+Das Glas aus Mondstaub lässt laut den Forschern zwar weniger Licht durch als sonst für Solarzellen verwendetes Glas. Dafür aber trübe es sich bei hoher Sonneneinstrahlung nicht ein, wie es oft bei den üblicherweise verwendeten Gläsern der Fall sei.
+Mehr zum Thema
+Raumschiffmodul ESM-3: Ohne diesen Container aus Bremen kommt die Nasa nicht zum Mond
+Aus Bremen berichtet Martin Schlak
+Mission Artemis 3: Nasa verschiebt bemannte Mondlandung auf 2027
+Raumfahrt-Kandidatin Amelie Schoenenwald: Wird sie die erste Deutsche auf dem Mond?
+Ein SPIEGEL-Gespräch von Johann Grolle und Christoph Seidler
+Benötigt werden für die Solarzellen aus Mondstaub außerdem kleinere Mengen verschiedener Metalle. Aus diesen bestehen etwa hauchdünne Elektroden und Leitungsbahnen. »Wenn man das Gewicht um 99 Prozent reduziert, braucht man keine ultraeffizienten 30-Prozent-Solarzellen mehr«, sagt Lang. Man müsse einfach mehr der weniger effizienten Solarzellen auf dem Erdtrabanten herstellen. Zudem könnten die Mondstaubsolarzellen noch weiterentwickelt werden. Theoretisch sei ein Wirkungsgrad von rund 23 Prozent möglich, schreibt das Team.

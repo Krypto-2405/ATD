@@ -1,0 +1,14 @@
+[Erstellt am: 2025-04-07 21:31:48]
+
+Mit einem charakteristischen »Plopp« lässt sich der Verschluss einer Bügelflasche öffnen. Das eingängige Geräusch hat nun das wissenschaftliche Interesse eines Forschungsteams um den Physiker Max Koch von der Universität Göttingen auf sich gezogen.
+Beim »Plopp« schwingt das Gas im Flaschenhals demnach mit einer Frequenz von etwa 800 Hertz, und der Schalldruck erreicht für einen Sekundenbruchteil – etwa 70 Millisekunden lang – 180 Dezibel. Im Flaschenhals ist es damit für einen kurzen Moment lauter als direkt neben einer Flugzeugturbine, wie Koch sagt.
+Ingwerbier in Bügelflaschen
+Das Team beschreibt im Fachblatt »Physics of Fluids«, zu welchen Ergebnissen es gekommen ist, als es selbst gebrautes Ingwerbier in Bügelflaschen mithilfe von Mikrofonen und Hochgeschwindigkeitskameras untersucht hat. Generell ist dabei wichtig, dass die Flasche Kohlendioxid enthält und unter deutlichem Überdruck steht. Dann dehnt sich beim Öffnen das unter Druck stehende Kohlendioxid rasch aus.
+»Wenn Gas expandiert, wird es kalt«, erklärt Koch. Bei einem Innendruck von drei bis fünf bar in der Flasche könne die Temperatur durchaus bis auf minus 50 Grad fallen, beim Öffnen von Sektflaschen sogar noch stärker – allerdings ebenfalls nur für Sekundenbruchteile.
+Mehr zum Thema
+Anfänge der Braukunst: Kommt das Bier doch aus Deutschland?
+Von Felix Bohr und Gerret von Nordheim
+Weinflaschen richtig öffnen: Zeig mir deinen Korkenzieher, und ich sage dir, wer du bist
+Von Gerald Franz
+Zudem nimmt beim Öffnen der Flasche der Druck über der Flüssigkeit schlagartig ab. Dies lässt das vorher gelöste Gas in der Flüssigkeit Bläschen bilden, und durch das zunehmende Volumen steigt die Flüssigkeit auf. Zu diesem Sprudeleffekt trage außerdem der Ruck bei, der gewöhnlich mit dem Öffnen einer Flasche einhergeht. Und auch der von außen gegen den Flaschenhals schlagende Deckel.
+Die Gruppe um den Hobbybrauer Koch nutzte für das »Spaßprojekt« 0,33-Liter-Flaschen mit selbst gebrautem Ingwerbier mit einem Innendruck von zwei bis fünf bar, um Simulationen für ein Flüssigkeits-Gas-Gemisch zu testen und Details zum »Plopp«-Geräusch zu ermitteln.
