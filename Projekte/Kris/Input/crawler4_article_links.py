@@ -1,29 +1,37 @@
+
+
+
 import requests
 from bs4 import BeautifulSoup
 import os
 
 # Funktion zum Extrahieren und Speichern der Artikel-Links
-def scrape_article_links(base_url, save_directory):
+def scrape_article_links(base_url, save_directory, max_pages=10):
     try:
-        response = requests.get(base_url)
-        response.raise_for_status()  # Sicherstellen, dass die Anfrage erfolgreich war
-        soup = BeautifulSoup(response.text, 'html.parser')
-        
-        # Alle Artikel-Links extrahieren (wir suchen nach 'a'-Tags mit der entsprechenden Klasse)
-        article_links = soup.find_all('a', class_='text-black dark:text-shade-lightest block')
-        
-        # Speichern der Links in einer Menge (Set), um Duplikate zu vermeiden
         links = set()  # Ein Set speichert nur eindeutige Links
         
-        # Schleife über alle gefundenen Links und Hinzufügen zur Menge
-        for link in article_links:
-            article_url = link.get('href')
+        # Schleife über die Seiten von 1 bis max_pages
+        for page_num in range(1, max_pages + 1):
+            # URL für die aktuelle Seite (z.B. /p1/, /p2/, ...)
+            page_url = f"{base_url}/p{page_num}/" if page_num > 1 else base_url
             
-            # Stelle sicher, dass der Link eine vollständige URL ist
-            if article_url and not article_url.startswith('http'):
-                article_url = 'https://www.spiegel.de' + article_url  # Falls der Link relativ ist
+            print(f"Verarbeite Seite: {page_url}")
+            response = requests.get(page_url)
+            response.raise_for_status()  # Sicherstellen, dass die Anfrage erfolgreich war
+            soup = BeautifulSoup(response.text, 'html.parser')
             
-            links.add(article_url)  # Link zur Menge (Set) hinzufügen
+            # Alle Artikel-Links extrahieren (wir suchen nach 'a'-Tags mit der entsprechenden Klasse)
+            article_links = soup.find_all('a', class_='text-black dark:text-shade-lightest block')
+            
+            # Schleife über alle gefundenen Links und Hinzufügen zur Menge
+            for link in article_links:
+                article_url = link.get('href')
+                
+                # Stelle sicher, dass der Link eine vollständige URL ist
+                if article_url and not article_url.startswith('http'):
+                    article_url = 'https://www.spiegel.de' + article_url  # Falls der Link relativ ist
+                
+                links.add(article_url)  # Link zur Menge (Set) hinzufügen
         
         # Speichern der Links in einer Textdatei
         links_file_path = os.path.join(save_directory, 'article_links.txt')
