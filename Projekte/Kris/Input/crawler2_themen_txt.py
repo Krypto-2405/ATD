@@ -14,10 +14,10 @@ os.makedirs(directory, exist_ok=True)
 file_path = r"F:/Prog/ATD/Projekte/Kris/Output/html/meta_output.html"
 
 # Dateiname mit vollständigem Pfad setzen
-filename = os.path.join(directory, "crawler2.txt")
+filename = os.path.join(directory, "crawler2_themen.txt")
 
 
-file_path2 = r"F:/Prog/ATD/Projekte/Kris/Output/txt_links/crawler2.txt"
+file_path2 = r"F:/Prog/ATD/Projekte/Kris/Output/txt_links/crawler2_themen.txt"
 open(file_path2, 'w').close()
 
 # Überprüfen, ob die Datei existiert

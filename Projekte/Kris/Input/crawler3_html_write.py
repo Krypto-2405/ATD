@@ -13,7 +13,7 @@ html_directory = os.path.join(base_directory, "html", "rubriken")
 os.makedirs(html_directory, exist_ok=True)
 
 # Pfad zur Datei mit den Links
-file_path = os.path.join(txt_links_directory, "crawler2.txt")
+file_path = os.path.join(txt_links_directory, "crawler2_themen.txt")
 
 # URL aus beliebigem Text extrahieren (Regex)
 def extract_url(text):

@@ -10,7 +10,7 @@ os.chdir(directory)
 # Liste der Skripte, die du ausführen möchtest
 scripts = [
     "crawler1_meta.py",
-    "crawler2_txt.py",
+    "crawler2_themen_txt.py",
     "crawler3_html_write.py",
     "crawler4_article_links.py",
     "crawler5_article.py",
